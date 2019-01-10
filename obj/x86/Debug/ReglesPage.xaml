@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="HappyMeal.ReglesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HappyMeal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible">
+        <Grid Background="LightYellow">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Règles du jeu" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Text="L'Objectif est de réaliser un repas équilibré en s'amusant" />
+            <Rectangle Grid.Row="2" Grid.ColumnSpan="2" Fill="Orange" Height="2" VerticalAlignment="Top"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Margin="10, 0, 10, 0" TextWrapping="Wrap" Text="Tu n'as que 30 secondes pour réaliser ce repas, alors surveille bien le décompte en haut à droite !" />
+            <Image Grid.Row="3" Grid.Column="1" Source="Assets/Tutoriel/Tuto1.png" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="10, 0, 10, 0" TextWrapping="Wrap" Text="Glisse les différents aliments que tu souhaites ajouter au repas dans le panier" />
+            <Image Grid.Row="4" Grid.Column="1" Source="Assets/Tutoriel/Tuto2.png" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="10, 0, 10, 0" TextWrapping="Wrap" Text="Quand tu penses que tout est bon, n'oublie pas d'appuyer sur STOP pour arrêter le chronomètre" />
+            <Image Grid.Row="5" Grid.Column="1" Source="Assets/Tutoriel/Tuto3.png" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="10, 0, 10, 0" TextWrapping="Wrap" Text="Attention ! Les aliments pèsent dans le panier, vérifie toujours que la jauge verte en bas de l'écran ne soit pas pleine chaque fois que tu ajoutes un aliment" />
+            <Image Grid.Row="6" Grid.Column="1" Source="Assets/Tutoriel/Tuto4.png" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </ScrollViewer>
+</Page>
+

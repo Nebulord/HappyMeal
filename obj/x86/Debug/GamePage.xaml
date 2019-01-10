@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="HappyMeal.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HappyMeal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="500"
+    Width="500"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='2' HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True"                                                  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <MediaElement x:ConnectionId='3' x:Name="Musique" AutoPlay="True" />
+        <MediaElement x:ConnectionId='4' x:Name="Son" />
+        <Image Source="Assets/EcranJeu.png" Grid.RowSpan="5" Grid.ColumnSpan="2"/>
+        <TextBlock Text="{Binding Chronometre.AffichageTemps}" Foreground="Black" FontWeight="Bold" FontSize="50" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0, 0, 10, 0"/>
+        <Image x:ConnectionId='5' Source="Assets/Panier.png" AllowDrop="True"                               Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Image x:ConnectionId='6' Source="Assets/Stop.png" AllowDrop="True"                               Grid.Row="3" Grid.ColumnSpan="2" Height="70" Width="120" VerticalAlignment="Bottom"                       />
+        <Rectangle Grid.Row="4" Grid.ColumnSpan="2" Height="30" Width="300" Stroke="Gray" StrokeThickness="3"/>
+        <ProgressBar Grid.Row="4" Grid.ColumnSpan="2" Height="24" Margin="103, 0, 103, 0" Foreground="LightGreen" Maximum="{Binding Panier.PoidsMax}" Value="{Binding Panier.Poids}"/>
+        <Image x:ConnectionId='7' x:Name="Food1" Source="{Binding Aliments[0].ImageSource}" CanDrag="True"                              Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="50" Width="50" Margin="20, 0, 0, 0" />
+        <Image x:ConnectionId='8' x:Name="Food2" Source="{Binding Aliments[1].ImageSource}" CanDrag="True"                              Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="50" Margin="0, 0, 0, 0" />
+        <Image x:ConnectionId='9' x:Name="Food3" Source="{Binding Aliments[2].ImageSource}" CanDrag="True"                              Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="50" Width="50" Margin="20, 0, 0, 0" />
+        <Image x:ConnectionId='10' x:Name="Food4" Source="{Binding Aliments[3].ImageSource}" CanDrag="True"                              Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Height="50" Width="50" Margin="0, 0, 20, 0" />
+        <Image x:ConnectionId='11' x:Name="Food5" Source="{Binding Aliments[4].ImageSource}" CanDrag="True"                              Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="50" Margin="0, 0, 0, 0" />
+        <Image x:ConnectionId='12' x:Name="Food6" Source="{Binding Aliments[5].ImageSource}" CanDrag="True"                              Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Height="50" Width="50" Margin="0, 0, 20, 0" />
+        <Image x:ConnectionId='13' x:Name="Food7" Source="{Binding Aliments[6].ImageSource}" CanDrag="True"                              Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="50" Width="50" Margin="20, 0, 0, 0" />
+        <Image x:ConnectionId='14' x:Name="Food8" Source="{Binding Aliments[7].ImageSource}" CanDrag="True"                              Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Height="50" Width="50" Margin="0, 0, 20, 0" />
+
+        <Rectangle Grid.RowSpan="5" Grid.ColumnSpan="2" Fill="Black" Opacity=".8" Visibility="{Binding EndOfGame}"/>
+        <TextBlock Text="{Binding EndOfGameText}" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="50" Visibility="{Binding EndOfGame}"/>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="{Binding EndOfGame}">
+            <TextBlock Text="{Binding Resultat.Note}" Foreground="White" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" />
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Visibility="{Binding AfficherResultats}">
+                <TextBlock Text="Glucide :" Foreground="White" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="18" />
+                <Image Source="{Binding Resultat.GlucideResult}" Width="15" Height="15" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0, 10, 0" />
+                <TextBlock Text="Lipide :" Foreground="White" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="18" />
+                <Image Source="{Binding Resultat.LipideResult}" Width="15" Height="15" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0, 10, 0" />
+                <TextBlock Text="Protéine :" Foreground="White" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="18" />
+                <Image Source="{Binding Resultat.ProteineResult}" Width="15" Height="15" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0, 10, 0" />
+            </StackPanel>
+        </StackPanel>
+        <Button x:ConnectionId='15' x:Name="Rejouer" Background="DarkOrange" FontSize="25" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding EndOfGame}"/>
+    </Grid>
+</Page>
+
