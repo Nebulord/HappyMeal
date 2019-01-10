@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-08T19:58:30.513</Modified>
+      <Modified>2019-01-10T12:50:50.365</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\HappyMeal.exe">
       <PackagePath>entrypoint\HappyMeal.exe</PackagePath>
-      <Modified>2019-01-08T19:58:30.137</Modified>
+      <Modified>2019-01-10T12:50:49.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -699,23 +699,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\HappyMeal.xr.xml">
       <PackagePath>HappyMeal.xr.xml</PackagePath>
-      <Modified>2019-01-08T19:28:23.020</Modified>
+      <Modified>2019-01-10T12:50:03.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-01-08T19:58:29.977</Modified>
+      <Modified>2019-01-10T12:50:49.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\GamePage.xbf">
       <PackagePath>GamePage.xbf</PackagePath>
-      <Modified>2019-01-08T19:58:29.977</Modified>
+      <Modified>2019-01-10T12:50:49.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-01-08T19:58:29.977</Modified>
+      <Modified>2019-01-10T12:50:49.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\ReglesPage.xbf">
       <PackagePath>ReglesPage.xbf</PackagePath>
-      <Modified>2019-01-08T19:58:29.977</Modified>
+      <Modified>2019-01-10T12:50:49.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -728,7 +728,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nebulord\Documents\LicenceDAM\UWP\Projet\HappyMeal\bin\x86\Debug\Core\HappyMeal.exe">
       <PackagePath>HappyMeal.exe</PackagePath>
-      <Modified>2019-01-08T19:58:30.509</Modified>
+      <Modified>2019-01-10T12:50:50.360</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -22,10 +22,10 @@
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Source="Assets/EcranTitre.png"/>
         <TextBlock Grid.Column="0" Grid.Row="0" Text="HAPPY MEAL" FontWeight="ExtraBold" FontSize="50" TextAlignment="Center" Foreground="DarkOrange" VerticalAlignment="Center"/>
-        <TextBlock Grid.Column="0" Grid.Row="1" Text="Créé ton propre repas équilibré...tout en t'amusant !" FontWeight="ExtraBlack" FontStyle="Italic" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='2' x:Name="SousTitre" Opacity="0" Grid.Column="0" Grid.Row="1" Text="Créé ton propre repas équilibré...tout en t'amusant !" FontWeight="ExtraBlack" FontStyle="Italic" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Column="0" Grid.Row="2" Margin="20, 0, 20, 0" Text="{Binding Pseudo, Mode=TwoWay}" MaxLength="8" PlaceholderText="Pseudo" Foreground="Black" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center" />
-        <Button x:ConnectionId='2' x:Name="Jouer" Background="DarkOrange" FontSize="30" FontWeight="Bold" Foreground="White" Grid.Column="0" Grid.Row="3" Content="Jouer !" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding ReadyToPlay}"/>
-        <Button x:ConnectionId='3' x:Name="Regles" Background="YellowGreen" FontSize="20" FontStyle="Italic" Foreground="White" Grid.Column="0" Grid.Row="3" Content="Règles du jeu" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 10, 10"/>
+        <Button x:ConnectionId='3' x:Name="Jouer" Background="DarkOrange" FontSize="30" FontWeight="Bold" Foreground="White" Grid.Column="0" Grid.Row="3" Content="Jouer !" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding ReadyToPlay}"/>
+        <Button x:ConnectionId='4' x:Name="Regles" Background="YellowGreen" FontSize="20" FontStyle="Italic" Foreground="White" Grid.Column="0" Grid.Row="3" Content="Règles du jeu" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 10, 10"/>
     </Grid>
 </Page>
 

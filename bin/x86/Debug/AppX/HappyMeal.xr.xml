@@ -79,6 +79,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Opacity" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="TextWrapping" />
     </RootType>

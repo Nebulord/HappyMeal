@@ -4,6 +4,7 @@ using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 
@@ -24,6 +25,20 @@ namespace HappyMeal
             this.InitializeComponent();
             Jouer.Click += SetGame;
             Regles.Click += SetRules;
+            TitreApparait();
+        }
+
+        private void TitreApparait()
+        {
+            Storyboard sb = new Storyboard();
+            DoubleAnimation animation = new DoubleAnimation();
+            DoubleAnimation endAnimation = new DoubleAnimation();
+            animation.Duration = new Duration(TimeSpan.FromSeconds(2));
+            sb.Children.Add(animation);
+            Storyboard.SetTarget(animation, SousTitre);
+            Storyboard.SetTargetProperty(animation, "Opacity");
+            animation.To = 1;
+            sb.AutoReverse = false; sb.Begin();
         }
 
         private void SetWindowSize(object sender, WindowSizeChangedEventArgs e)
